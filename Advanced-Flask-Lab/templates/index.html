@@ -15,7 +15,7 @@
 					<header id="header">
 						<span class="avatar"><img src="{{url_for('static',filename='images/avatar.jpg')}}" alt="" /></span>
 
-            <h1>Description</h1>
+            <h1>Middle East Entrepreneurs of Tomorrow. Enabling the next generation of Israeli and Palestinian leaders</h1>
             <br>
             <!-- About me button -->
             <a href="#"><button style="color:white;width:40%" >More about me</button></a>
@@ -39,24 +39,28 @@
                 <div>
                       <a href="">
                         <img src="static/images/thumbs/01.jpg" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <h3>HERE YOU CAN SEE MY TRIP DO DUBAI!</h3>
                       </a>
                 
                       <a href="">
                         <img src="url_for('static',filename='images/thumbs/02.jpg')" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <h3>WHAT ARE YOU LOOKING FOR THERE IS NOTHING HERE>_<</h3>
                       </a>
                 </div>    
                 <div>
                   <a href="">
                         <img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <h3>HERE YOU CAN SEE MY TRIP TO NO WHERE!!</h3>
                       </a>
                 </div>  
 
 							</section>
-
+							{% for p in post %}
+							<img src="{{p}}"width="560px"/><br>
+              <h2>{{post[p]}}</h2>
+					      {%endfor%}
 					</section>
+
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -70,6 +74,18 @@
 			<script src="static/js/jquery.poptrox.min.js"></script>
 			<script src="static/js/skel.min.js"></script>
 			<script src="static/js/main.js"></script>
+  <style type="text/css">
+  	{{pie}}
 
+  </style>
 	</body>
+
 </html>
+
+
+
+
+
+
+
+
