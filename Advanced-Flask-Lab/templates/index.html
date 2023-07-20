@@ -13,9 +13,9 @@
 
 				<!-- Header -->
 					<header id="header">
-						<span class="avatar"><img src="{{url_for('static',filename='images/avatar.jpg')}}" alt="" /></span>
+						<span class="avatar"><img src="{{a}}" alt="" /></span>
 
-            <h1>Middle East Entrepreneurs of Tomorrow. Enabling the next generation of Israeli and Palestinian leaders</h1>
+            <h1>{{m}}</h1>
             <br>
             <!-- About me button -->
             <a href="#"><button style="color:white;width:40%" >More about me</button></a>
@@ -43,7 +43,7 @@
                       </a>
                 
                       <a href="">
-                        <img src="url_for('static',filename='images/thumbs/02.jpg')" alt="" />
+                        <img src="{{url_for('static',filename='images/thumbs/02.jpg')}}" alt="" />
                         <h3>WHAT ARE YOU LOOKING FOR THERE IS NOTHING HERE>_<</h3>
                       </a>
                 </div>    
@@ -55,10 +55,11 @@
                 </div>  
 
 							</section>
-							{% for p in post %}
-							<img src="{{p}}"width="560px"/><br>
-              <h2>{{post[p]}}</h2>
-					      {%endfor%}
+							{% for i in r %}
+							<img src="{{i}}">
+							<h3>{{r[i]}}</h3>
+							{% endfor%}
+              <h2></h2>
 					</section>
 
 
@@ -75,8 +76,6 @@
 			<script src="static/js/skel.min.js"></script>
 			<script src="static/js/main.js"></script>
   <style type="text/css">
-  	{{pie}}
-
   </style>
 	</body>
 
