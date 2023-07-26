@@ -23,7 +23,6 @@ posts = {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRnqWNif-UNkUF6GJ5iMdlNotR3jMElvI4ng&usqp=CAU": "Class of 2024's Y1 closing event cohort"}
 
 
-#####
 
 
 @app.route('/')  # '/' for the default page
